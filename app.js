@@ -55,10 +55,10 @@ app.use("/campgrounds", campgroundRoutes);
 app.use("/campgrounds/:id/comments", commentRoutes);
 
 
-// For running on cloud9:
-//app.listen(process.env.PORT, process.env.IP, function(err, req) {
+// For running on cloud9 or Heroku:
+app.listen(process.env.PORT, process.env.IP, function(err, req) {
 //
 // For running on localhost:
-app.listen("5666", "localhost", function(err) {
+//app.listen("5666", "localhost", function(err) {
    console.log("The YelpCamp Server Has Started!");
 });
