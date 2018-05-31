@@ -101,6 +101,14 @@ Each Campground has:
 * Add Link to Edit Page
 * Add Update Route
 
+<!--
+Campground Edit Route: /campgrounds/:id/edit
+Campground Destroy Route: /campgrounds/:id
+
+Comment Edit Route:   /campgrounds/:id/comments/:comment_id/edit
+Comment Destroy Route:    /campgrounds/:id/comments/:comment_id
+-->
+
 #Deleting Campgrounds
 * Add Destroy Route
 * Add Delete button
@@ -114,9 +122,6 @@ Each Campground has:
 * Add Edit route for comments
 * Add Edit button
 * Add Update route
-
-<!--/campgrounds/:id/edit-->
-<!--/campgrounds/:id/comments/:comment_id/edit-->
 
 #Deleting Comments
 * Add Destroy route
