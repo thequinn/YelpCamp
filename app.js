@@ -29,7 +29,7 @@ Config #2: for Production Environemnt/Version
 - This config connects to the mongoDB on a remote DB server (mLab.com)
 - It's the deployed version for production purpose.
 
-- It connects using a driver via the standard MongoDB URL (from mLab.com)
+- It connects using a driver via the standard MongoDB URI (from mLab.com)
 */
 var url = "mongodb://anna:password1@ds141320.mlab.com:41320/sassywizard"
 mongoose.connect(url);
