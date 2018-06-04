@@ -15,11 +15,22 @@ var express     = require("express"),
 var commentRoutes    = require("./routes/comments"),
     campgroundRoutes = require("./routes/campgrounds"),
     indexRoutes      = require("./routes/index")
- 
-//var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp_v10";
-//mongoose.connect(url);
-//
-// To connect using a driver via the standard MongoDB URI (from mLab.com)
+
+//console.log("process.env.DATABASEURL:", process.env.DATABASEURL);    
+/*  
+Config #1: for Development Environment/Version
+- This config connects to the mongoDB installed to our local machine
+- It's suitable for situations like testing a new feature, so the production 
+   version on Heroku and mLab, are not effected. 
+*/
+//var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp_v11Deployed";
+/* 
+Config #2: for Production Environemnt/Version
+- This config connects to the mongoDB on a remote DB server (mLab.com)
+- It's the deployed version for production purpose.
+
+- It connects using a driver via the standard MongoDB URL (from mLab.com)
+*/
 var url = "mongodb://anna:password1@ds141320.mlab.com:41320/sassywizard"
 mongoose.connect(url);
 
