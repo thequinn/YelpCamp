@@ -31,7 +31,7 @@ Config #2: for Production Environemnt/Version
 
 - It connects using a driver via the standard MongoDB URI (from mLab.com)
 */
-var url = "mongodb://anna:password1@ds141320.mlab.com:41320/sassywizard"
+//var url = "mongodb://anna:password1@ds141320.mlab.com:41320/sassywizard"
 mongoose.connect(url);
 
 
