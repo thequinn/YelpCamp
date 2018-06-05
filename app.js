@@ -23,7 +23,7 @@ Config #1: for Development Environment/Version
 - It's suitable for situations like testing a new feature, so the production 
    version on Heroku and mLab, are not effected. 
 */
-//var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp_v11Deployed";
+var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp_v11Deployed";
 /* 
 Config #2: for Production Environemnt/Version
 - This config connects to the mongoDB on a remote DB server (mLab.com)
